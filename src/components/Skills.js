@@ -22,12 +22,13 @@ const VideoBg = styled.video`
   width: 100%;
   height: 75%;
   object-fit: cover;
-  //position: absolute;
+  position: absolute;
 `;
 const SkillsGrid = styled.div`
+  z-index: 2;
   display: grid;
   grid-auto-flow: row;
-  //position: sticky;
+  position: sticky;
   margin-top: 20px;
   margin-bottom: 20px;
   grid-template-columns: 33.33% 33.33% 33.33%;
