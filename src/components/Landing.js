@@ -8,7 +8,8 @@ const MainContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 800px;
+  height: 825px;
+  //height: 100%;
   position: relative;
   z-index: 1;
 `;

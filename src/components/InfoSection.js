@@ -6,12 +6,13 @@ const Section = styled.div`
   width: 100%;
   height: 100%;
   padding: 4rem 0rem;
+  background: black;
 `;
 const Container = styled.div`
   padding: 3rem calc((100vw - 1300px) / 2);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 800px;
+  grid-template-rows: 600px;
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
   }
@@ -26,11 +27,14 @@ const ColumnLeft = styled.div`
   order: ${({ reverse }) => (reverse ? '2' : '1')};
 
   h1 {
+    color: whitesmoke;
     margin-bottom: 1rem;
     font-size: clamp(1.5rem, 6vw, 2rem);
   }
 
   p {
+    color: whitesmoke;
+
     margin-bottom: 2rem;
   }
 `;

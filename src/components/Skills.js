@@ -5,9 +5,11 @@ import Video from '../videos/SkillsVideo.mp4';
 
 const MainContainer = styled.div`
   color: whitesmoke;
+  //height: 825px;
   h1 {
     position: relative;
-    padding: 32px;
+    padding-left: 32px;
+    padding-top: 32px;
     @media screen and (max-width: 480px) {
       font-size: 24px;
     }
@@ -23,6 +25,9 @@ const VideoBg = styled.video`
   height: 75%;
   object-fit: cover;
   position: absolute;
+  //padding-top: 32px;
+  //padding-bottom: 32px;
+  //z-index: -1;
 `;
 const SkillsGrid = styled.div`
   z-index: 2;
