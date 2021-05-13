@@ -82,7 +82,7 @@ const Button = styled.div``;
 
 const Landing = () => {
   return (
-    <MainContainer>
+    <MainContainer id='home'>
       <Background>
         <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
       </Background>

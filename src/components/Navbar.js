@@ -1,10 +1,11 @@
 import React from 'react';
 import styled, { css } from 'styled-components/macro';
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import { menuData } from '../data/MenuData';
 import { Button } from './Button';
 //import image from '../images/';  //for importing own svg or image from nav bar icon
 import { CgMenuRound } from 'react-icons/cg'; //for importing from react icons
+import { animateScroll, Link } from 'react-scroll';
 
 const Nav = styled.nav`
   height: 60px;
@@ -90,14 +91,28 @@ const NavBtn = styled.div`
   }
 `;
 
+const toggleHome = () => {
+  animateScroll.scrollToTop();
+};
+
 const Navbar = ({ toggle }) => {
   return (
     <Nav>
-      <Logo to='/'>Portfolio</Logo>
+      <Logo to='/' onClick={toggleHome}>
+        Portfolio
+      </Logo>
       <MenuBars onClick={toggle} />
       <NavMenu>
         {menuData.map((item, index) => (
-          <NavMenuLinks to={item.link} key={index}>
+          <NavMenuLinks
+            to={item.link}
+            key={index}
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact='true'
+            offset={item.offset}
+          >
             {item.title}
           </NavMenuLinks>
         ))}

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Button } from './Button';
 import { menuData } from '../data/MenuData';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 import { FaTimes } from 'react-icons/fa';
 const DropdownContainer = styled.div`
   position: fixed;
@@ -72,7 +72,15 @@ const Dropdown = ({ isOpen, toggle }) => {
       <DropdownWrapper>
         <DropdownMenu>
           {menuData.map((item, index) => (
-            <DropdownLink to={item.link} key={index}>
+            <DropdownLink
+              to={item.link}
+              key={index}
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact='true'
+              offset={item.offset}
+            >
               {item.title}
             </DropdownLink>
           ))}
