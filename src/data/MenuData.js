@@ -1,7 +1,7 @@
 export const menuData = [
-  { title: 'Home', link: './' },
-  { title: 'About', link: '/about' },
+  { title: 'Home', link: 'home', offset: 0 },
+  { title: 'About', link: 'about', offset: 0 },
 
-  { title: 'Skills', link: '/skills' },
-  { title: 'Projects', link: '/projects' },
+  { title: 'Skills', link: 'skills', offset: -50 },
+  { title: 'Projects', link: 'projects', offset: 0 },
 ];

@@ -7,12 +7,13 @@ const MainContainer = styled.div`
   color: whitesmoke;
   //height: 825px;
   h1 {
+    font-size: clamp(1.5rem, 6vw, 2rem);
     position: relative;
     padding-left: 32px;
     padding-top: 32px;
-    @media screen and (max-width: 480px) {
+    /* @media screen and (max-width: 480px) {
       font-size: 24px;
-    }
+    } */
   }
 `;
 
@@ -86,7 +87,7 @@ const Icon = styled.div`
 
 const Skills = () => {
   return (
-    <MainContainer>
+    <MainContainer id='skills'>
       <Background>
         <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
       </Background>

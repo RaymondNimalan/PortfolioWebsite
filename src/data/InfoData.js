@@ -1,6 +1,6 @@
 import FacePic from '../images/FacePic.jpeg';
 
-export const InfoData = {
+export const AboutData = {
   heading: 'About',
   paragraphOne:
     'Hi! My name is Raymond Nimalan. I am a Fullstack Engineer from the Washington D.C. area. From a young age, I have always been fascinated with computers and all things tech. But a huge turning point was when I started building computers for myself and my close friends. This hobby fueled the desire and passion to learn as much as I could about computers. The natural progression was to then learn to code in my free time off work.',

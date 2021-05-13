@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Button } from './Button';
+import { AboutData } from '../data/InfoData';
 
 const Section = styled.div`
   width: 100%;
@@ -69,7 +70,7 @@ const InfoSection = ({
   image,
 }) => {
   return (
-    <Section>
+    <Section id='about'>
       <Container>
         <ColumnLeft>
           <h1>{heading}</h1>

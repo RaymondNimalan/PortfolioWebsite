@@ -2,17 +2,24 @@ import React from 'react';
 import styled from 'styled-components';
 import { Button } from './Button';
 import { projectData } from '../data/ProjectData';
+import { FaGithubAlt } from 'react-icons/fa';
+import { TiHomeOutline } from 'react-icons/ti';
+
 const Section = styled.div`
   width: 100%;
   height: 100%;
   padding: 4rem 0rem;
   background: black;
   h1 {
+    font-size: clamp(1.5rem, 6vw, 2rem);
     color: whitesmoke;
     position: sticky;
     padding-left: 32px;
     padding-top: 32px;
     padding-bottom: 32px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 1rem 0rem;
   }
 `;
 const Container = styled.div`
@@ -20,12 +27,15 @@ const Container = styled.div`
   padding: 1rem calc((100vw - 1300px) / 2);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 250px;
+  grid-template-rows: 300px;
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
   }
+  @media screen and (max-width: 480px) {
+    padding: 0;
+  }
 `;
-const ColumnRight = styled.div`
+const ColumnLeft = styled.div`
   background: #2e2927;
   display: flex;
   flex-direction: column;
@@ -53,7 +63,7 @@ const ColumnRight = styled.div`
     }
   }
 `;
-const ColumnLeft = styled.div`
+const ColumnRight = styled.div`
   //padding: 1rem 2rem;
   background: #2e2927;
   order: ${({ reverse }) => (reverse ? '1' : '2')};
@@ -75,23 +85,47 @@ const ColumnLeft = styled.div`
   }
 `;
 
+const ButtonContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #b44d2e;
+  font-size: 32px;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-content: space-evenly;
+  align-items: center;
+`;
+
+const Icon = styled.div`
+  cursor: pointer;
+  &:hover {
+    transform: translateY(-2px);
+    color: whitesmoke;
+  }
+`;
+
 const Projects = () => {
   return (
-    <Section>
+    <Section id='projects'>
       <h1>Projects</h1>
       {projectData.map((item, index) => (
-        <Container>
-          <ColumnLeft reverse={item.reverse}>
+        <Container key={index}>
+          <ColumnRight reverse={item.reverse}>
             <img src={item.image} alt='images' />
-          </ColumnLeft>
-          <ColumnRight>
+          </ColumnRight>
+          <ColumnLeft>
             <h2>{item.title}:</h2>
             <p>{item.about1}</p>
             <p>{item.about2}</p>
-            {/* <Button to='/' primary='true'>
-                {buttonLabel}{' '}
-              </Button> */}
-          </ColumnRight>
+            <ButtonContainer>
+              <Icon>
+                <FaGithubAlt />
+              </Icon>
+              <Icon>
+                <TiHomeOutline />
+              </Icon>
+            </ButtonContainer>
+          </ColumnLeft>
         </Container>
       ))}
     </Section>

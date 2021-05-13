@@ -11,7 +11,7 @@ export const Button = styled(Link)`
   cursor: pointer;
   text-decoration: none;
   transition: 0.3s;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   padding: ${({ big }) => (big ? '16px 40px' : '14px 24px')};
@@ -22,4 +22,5 @@ export const Button = styled(Link)`
     color: red;
     font-size: 100%;
   }
+  float: left;
 `;
