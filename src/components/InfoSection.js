@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Button } from './Button';
-import { AboutData } from '../data/InfoData';
 
 const Section = styled.div`
   width: 100%;

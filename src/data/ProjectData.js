@@ -1,8 +1,4 @@
-import InfuaxWarsPic from '../images/InfauxWars.png';
-import ScreelyInfauxWars from '../images/ScreelyInfauxWars2.png';
-import ScreelyPoshPups from '../images/ScreelyPoshPups.png';
 import InfuaxWarsMockup from '../images/InfauxMockup.jpeg';
-
 import PoshPupsMockup from '../images/PoshPupsMockup.jpeg';
 export const projectData = [
   {
@@ -12,8 +8,8 @@ export const projectData = [
     about2:
       'Tech Stack: Google NL API, JavaScript, Python, Node.js, Express, React, Redux, Sequelize, PostgreSQL',
     image: InfuaxWarsMockup,
-    websiteUrl: '',
-    githubUrl: '',
+    websiteUrl: 'https://infaux-wars.herokuapp.com/',
+    githubUrl: 'https://github.com/2011-sagittarius/FakeNews',
   },
   {
     title: 'Posh Pups',
@@ -22,7 +18,7 @@ export const projectData = [
     about2:
       'Tech Stack: JavaScript, Node.js, Express, React, Redux, Sequelize, PostgreSQL',
     image: PoshPupsMockup,
-    websiteUrl: '',
-    githubUrl: '',
+    websiteUrl: 'http://posh-pups.herokuapp.com/',
+    githubUrl: 'https://github.com/Team-Beta-GraceShopper/GraceShopper',
   },
 ];

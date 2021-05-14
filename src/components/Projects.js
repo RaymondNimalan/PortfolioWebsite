@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Button } from './Button';
 import { projectData } from '../data/ProjectData';
 import { FaGithubAlt } from 'react-icons/fa';
 import { TiHomeOutline } from 'react-icons/ti';
@@ -119,10 +118,18 @@ const Projects = () => {
             <p>{item.about2}</p>
             <ButtonContainer>
               <Icon>
-                <FaGithubAlt />
+                <FaGithubAlt
+                  onClick={() => {
+                    window.location = `${item.githubUrl}`;
+                  }}
+                />
               </Icon>
               <Icon>
-                <TiHomeOutline />
+                <TiHomeOutline
+                  onClick={() => {
+                    window.location = `${item.websiteUrl}`;
+                  }}
+                />
               </Icon>
             </ButtonContainer>
           </ColumnLeft>
