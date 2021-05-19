@@ -12,10 +12,10 @@ const Section = styled.div`
   h1 {
     font-size: clamp(1.5rem, 6vw, 2rem);
     color: whitesmoke;
-    position: sticky;
+    position: relative;
     padding-left: 32px;
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 16px;
   }
   @media screen and (max-width: 768px) {
     padding: 1rem 0rem;
@@ -96,6 +96,7 @@ const ButtonContainer = styled.div`
 `;
 
 const Icon = styled.div`
+  display: inline-grid;
   cursor: pointer;
   &:hover {
     transform: translateY(-2px);
