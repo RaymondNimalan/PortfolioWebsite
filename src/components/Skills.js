@@ -6,6 +6,8 @@ import Video from '../videos/SkillsVideo.mp4';
 const MainContainer = styled.div`
   color: whitesmoke;
   //height: 825px;
+  padding-top: 32px;
+  background: black;
   h1 {
     font-size: clamp(1.5rem, 6vw, 2rem);
     position: relative;
