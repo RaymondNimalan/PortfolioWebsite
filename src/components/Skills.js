@@ -23,6 +23,7 @@ const VideoBg = styled.video`
   object-fit: cover;
   width: 100%;
   height: 600px;
+  overflow: hidden;
 `;
 
 const Content = styled.div`
