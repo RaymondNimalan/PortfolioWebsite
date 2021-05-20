@@ -43,6 +43,7 @@ const ButtonContainer = styled.div`
 
 const Icon = styled.div`
   display: inline-grid;
+
   font-size: 50px;
 
   cursor: pointer;
@@ -64,13 +65,26 @@ const Footer = () => {
         <h1>Contact Me</h1>
         <ButtonContainer>
           <Icon>
-            <FaGithubSquare />
+            <FaGithubSquare
+              onClick={() => {
+                window.location = 'https://github.com/RaymondNimalan';
+              }}
+            />
           </Icon>
           <Icon>
-            <FaLinkedin />
+            <FaLinkedin
+              onClick={() => {
+                window.location =
+                  'https://www.linkedin.com/in/raymond-nimalan/';
+              }}
+            />
           </Icon>
           <Icon>
-            <ImMail />
+            <ImMail
+              onClick={() => {
+                window.location = 'mailto:raymondnimalan@gmail.com';
+              }}
+            />
           </Icon>
         </ButtonContainer>
       </Content>
