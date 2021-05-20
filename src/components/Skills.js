@@ -4,39 +4,41 @@ import { skillsData } from '../data/SkillsData';
 import Video from '../videos/SkillsVideo.mp4';
 
 const MainContainer = styled.div`
+  display: block;
   color: whitesmoke;
-  //height: 825px;
+  height: 600px;
   padding-top: 32px;
   background: black;
-  h1 {
-    font-size: clamp(1.5rem, 6vw, 2rem);
-    position: relative;
-    padding-left: 32px;
-    padding-top: 32px;
-    /* @media screen and (max-width: 480px) {
-      font-size: 24px;
-    } */
-  }
+  height: 600px;
+  z-index: -2;
 `;
 
 const Background = styled.div`
-  z-index: -1;
+  background: black;
 `;
 
 const VideoBg = styled.video`
-  width: 100%;
-  //height: 75%;
-  object-fit: cover;
+  background: black;
   position: absolute;
-  //padding-top: 32px;
-  //padding-bottom: 32px;
-  //z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  height: 600px;
 `;
+
+const Content = styled.div`
+  position: relative;
+  h1 {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+    padding-left: 32px;
+    padding-top: 32px;
+  }
+`;
+
 const SkillsGrid = styled.div`
-  z-index: 2;
+  //z-index: 2;
   display: grid;
   grid-auto-flow: row;
-  position: sticky;
+  //position: sticky;
   margin-top: 20px;
   margin-bottom: 20px;
   grid-template-columns: 33.33% 33.33% 33.33%;
@@ -93,15 +95,17 @@ const Skills = () => {
       <Background>
         <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
       </Background>
-      <h1>Skills</h1>
-      <SkillsGrid>
-        {skillsData.map((item, index) => (
-          <GridItem key={index}>
-            <Icon>{item.image}</Icon>
-            <h2>{item.name}</h2>
-          </GridItem>
-        ))}
-      </SkillsGrid>
+      <Content>
+        <h1>Skills</h1>
+        <SkillsGrid>
+          {skillsData.map((item, index) => (
+            <GridItem key={index}>
+              <Icon>{item.image}</Icon>
+              <h2>{item.name}</h2>
+            </GridItem>
+          ))}
+        </SkillsGrid>
+      </Content>
     </MainContainer>
   );
 };
