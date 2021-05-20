@@ -35,9 +35,6 @@ const Content = styled.div`
       padding: 16px;
     }
   }
-  @media screen and (max-width: 480px) {
-    padding: 16px;
-  }
 `;
 
 const ButtonContainer = styled.div`
