@@ -18,6 +18,9 @@ const VideoBg = styled.video`
   z-index: -1;
   width: 100%;
   height: 350px;
+  @media screen and (max-width: 480px) {
+    height: 250px;
+  }
 `;
 
 const Content = styled.div`
@@ -28,6 +31,12 @@ const Content = styled.div`
 
     padding: 32px;
     text-align: center;
+    @media screen and (max-width: 480px) {
+      padding: 16px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    padding: 16px;
   }
 `;
 
@@ -39,6 +48,10 @@ const ButtonContainer = styled.div`
   justify-items: center;
   align-content: space-evenly;
   align-items: center;
+  @media screen and (max-width: 480px) {
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
 `;
 
 const Icon = styled.div`
@@ -51,6 +64,10 @@ const Icon = styled.div`
     transform: translateY(-2px);
     color: #b44d2e;
 
+    font-size: 40px;
+  }
+  @media screen and (max-width: 480px) {
+    padding-bottom: 10px;
     font-size: 40px;
   }
 `;

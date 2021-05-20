@@ -28,7 +28,7 @@ const NavLink = css`
   text-decoration: none;
   &:hover {
     transform: translateY(-2px);
-    color: red;
+    color: #b44d2e;
     font-size: 120%;
   }
 `;
@@ -62,7 +62,8 @@ const MenuBars = styled(CgMenuRound)`
     transform: translate(-50%, 25%);
     color: white;
     &:hover {
-      color: red;
+      color: #b44d2e;
+
       /* height: 50px;
       width: 50px; */
     }
