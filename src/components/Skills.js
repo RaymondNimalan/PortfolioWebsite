@@ -25,7 +25,7 @@ const Background = styled.div`
 
 const VideoBg = styled.video`
   width: 100%;
-  height: 75%;
+  //height: 75%;
   object-fit: cover;
   position: absolute;
   //padding-top: 32px;
