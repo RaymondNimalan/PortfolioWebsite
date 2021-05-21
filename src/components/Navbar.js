@@ -5,7 +5,7 @@ import { menuData } from '../data/MenuData';
 //import { Button } from './Button';
 //import image from '../images/';  //for importing own svg or image from nav bar icon
 import { CgMenuRound } from 'react-icons/cg'; //for importing from react icons
-import { animateScroll, Link } from 'react-scroll';
+//import { animateScroll, Link } from 'react-scroll';
 
 const Nav = styled.nav`
   /* height: 100%; //sidebar
