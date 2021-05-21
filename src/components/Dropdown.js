@@ -1,19 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Button } from './Button';
+//import { Button } from './Button';
 import { menuData } from '../data/MenuData';
 import { Link } from 'react-scroll';
 import { FaTimes } from 'react-icons/fa';
 const DropdownContainer = styled.div`
   position: fixed;
   z-index: 999;
-  width: 100%;
+  width: 40%;
   height: 100%;
-  background: #cd853f;
+  background: #cd853f; //older color
+  //background: #2e2927;
   display: grid;
   align-items: center;
   top: 0;
-  left: 0;
+  right: 0;
   transition: 0.3s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
   top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
@@ -45,27 +46,29 @@ const DropdownMenu = styled.div`
 `;
 const DropdownLink = styled(Link)`
   display: flex;
+  text-align: right;
   align-items: center;
   justify-content: center;
   color: #fff;
   font-size: 1.5rem;
   text-decoration: none;
   list-style: none;
-  color: #fff;
   cursor: pointer;
   transition: 0.2s ease-in-out;
   &:hover {
     color: #000d1a;
   }
 `;
-const BtnWrap = styled.div`
-  display: flex;
-  justify-content: center;
-`;
+// const BtnWrap = styled.div`
+//   display: flex;
+//   justify-content: center;
+// `;
 
 const Dropdown = ({ isOpen, toggle }) => {
   return (
     <DropdownContainer isOpen={isOpen} onClick={toggle}>
+      {/* <h1>Raymond Nimalan</h1>
+      <h1>Portfolio Website</h1> */}
       <Icon onClick={toggle}>
         <CloseIcon />
       </Icon>
@@ -80,16 +83,17 @@ const Dropdown = ({ isOpen, toggle }) => {
               spy={true}
               exact='true'
               offset={item.offset}
+              onClick={toggle}
             >
               {item.title}
             </DropdownLink>
           ))}
         </DropdownMenu>
-        <BtnWrap>
+        {/* <BtnWrap>
           <Button primary='true' round='true' big='true' to='/contact'>
             Contact Me
           </Button>
-        </BtnWrap>
+        </BtnWrap> */}
       </DropdownWrapper>
     </DropdownContainer>
   );

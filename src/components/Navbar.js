@@ -8,10 +8,12 @@ import { CgMenuRound } from 'react-icons/cg'; //for importing from react icons
 import { animateScroll, Link } from 'react-scroll';
 
 const Nav = styled.nav`
+  /* height: 100%; //sidebar
+  width: 150px; //sidebar */
   height: 60px;
   background: #000;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 1rem 2rem;
   z-index: 100;
   position: fixed;
@@ -21,6 +23,7 @@ const Nav = styled.nav`
 const NavLink = css`
   color: white;
   display: flex;
+  display: inline-grid;
   align-items: center;
   padding: 0 1rem;
   height: 100%;
@@ -63,17 +66,17 @@ const MenuBars = styled(CgMenuRound)`
     color: white;
     &:hover {
       color: #b44d2e;
-
-      /* height: 50px;
-      width: 50px; */
     }
   }
 `;
 
 const NavMenu = styled.div`
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  margin-right: -48px;
+  text-align: center;
+  /* align-content: center;
+  align-self: center; */
+  //margin-right: -48px;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -99,9 +102,9 @@ const toggleHome = () => {
 const Navbar = ({ toggle }) => {
   return (
     <Nav>
-      <Logo to='/' onClick={toggleHome}>
+      {/* <Logo to='/' onClick={toggleHome}>
         Portfolio
-      </Logo>
+      </Logo> */}
       <MenuBars onClick={toggle} />
       <NavMenu>
         {menuData.map((item, index) => (
@@ -118,11 +121,11 @@ const Navbar = ({ toggle }) => {
           </NavMenuLinks>
         ))}
       </NavMenu>
-      <NavBtn>
+      {/* <NavBtn>
         <Button to='/contact' primary='true'>
           Contact Me
         </Button>
-      </NavBtn>
+      </NavBtn> */}
     </Nav>
   );
 };
