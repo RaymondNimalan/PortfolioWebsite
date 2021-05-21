@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components/macro';
 //import { Link } from 'react-router-dom';
 import { menuData } from '../data/MenuData';
-import { Button } from './Button';
+//import { Button } from './Button';
 //import image from '../images/';  //for importing own svg or image from nav bar icon
 import { CgMenuRound } from 'react-icons/cg'; //for importing from react icons
 import { animateScroll, Link } from 'react-scroll';
@@ -35,11 +35,11 @@ const NavLink = css`
     font-size: 120%;
   }
 `;
-const Logo = styled(Link)`
-  ${NavLink}
-  font-style: italic;
-  color: #fff;
-`;
+// const Logo = styled(Link)`
+//   ${NavLink}
+//   font-style: italic;
+//   color: #fff;
+// `;
 
 // const MenuBars = styled.i`  //.i is for icons
 //   display: none;
@@ -86,18 +86,18 @@ const NavMenuLinks = styled(Link)`
   ${NavLink}
 `;
 
-const NavBtn = styled.div`
-  display: flex;
-  align-items: center;
-  margin-right: 24px;
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-`;
+// const NavBtn = styled.div`
+//   display: flex;
+//   align-items: center;
+//   margin-right: 24px;
+//   @media screen and (max-width: 768px) {
+//     display: none;
+//   }
+// `;
 
-const toggleHome = () => {
-  animateScroll.scrollToTop();
-};
+// const toggleHome = () => {
+//   animateScroll.scrollToTop();
+// };
 
 const Navbar = ({ toggle }) => {
   return (
