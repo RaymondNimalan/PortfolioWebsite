@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components/macro';
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { menuData } from '../data/MenuData';
 //import { Button } from './Button';
 //import image from '../images/';  //for importing own svg or image from nav bar icon
