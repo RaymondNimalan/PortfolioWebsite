@@ -4,7 +4,7 @@ import { menuData } from '../data/MenuData';
 import { CgMenuRound } from 'react-icons/cg';
 import { animateScroll, Link } from 'react-scroll';
 
-const Nav = styled.nav`
+const Nav = styled.div`
   /* height: 100%; //sidebar
   width: 150px; //sidebar */
   height: 60px;
