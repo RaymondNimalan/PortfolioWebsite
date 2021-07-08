@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { css } from 'styled-components/macro';
 import { menuData } from '../data/MenuData';
 import { CgMenuRound } from 'react-icons/cg';
-import { animateScroll, Link } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 const Nav = styled.div`
   /* height: 100%; //sidebar
