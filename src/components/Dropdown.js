@@ -59,10 +59,6 @@ const DropdownLink = styled(Link)`
     color: #000d1a;
   }
 `;
-// const BtnWrap = styled.div`
-//   display: flex;
-//   justify-content: center;
-// `;
 
 const Dropdown = ({ isOpen, toggle }) => {
   return (
@@ -89,11 +85,6 @@ const Dropdown = ({ isOpen, toggle }) => {
             </DropdownLink>
           ))}
         </DropdownMenu>
-        {/* <BtnWrap>
-          <Button primary='true' round='true' big='true' to='/contact'>
-            Contact Me
-          </Button>
-        </BtnWrap> */}
       </DropdownWrapper>
     </DropdownContainer>
   );

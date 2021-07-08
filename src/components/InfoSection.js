@@ -10,16 +10,13 @@ const Section = styled.div`
   h1 {
     position: flex;
     color: whitesmoke;
-    //margin-bottom: 1rem;
     font-size: clamp(1.5rem, 6vw, 2rem);
     padding: 16px 0px 0px 32px;
   }
 `;
 const Container = styled.div`
-  //padding: 3rem calc((100vw - 1300px) / 2);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  //grid-template-rows: 600px;
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
   }
@@ -53,7 +50,6 @@ const ColumnRight = styled.div`
   align-items: center;
   @media screen and (max-width: 768px) {
     order: ${({ reverse }) => (reverse ? '2' : '1')};
-    //height: 400px;
     padding-bottom: 0px;
   }
 
@@ -74,7 +70,6 @@ const InfoSection = ({
   heading,
   paragraphOne,
   paragraphTwo,
-  buttonLabel,
   reverse,
   image,
 }) => {
@@ -85,9 +80,6 @@ const InfoSection = ({
         <ColumnLeft>
           <p>{paragraphOne}</p>
           <p>{paragraphTwo}</p>
-          {/* <Button to='/' primary='true'>
-            {buttonLabel}{' '}
-          </Button> */}
         </ColumnLeft>
         <ColumnRight reverse={reverse}>
           <img src={image} alt='images' />

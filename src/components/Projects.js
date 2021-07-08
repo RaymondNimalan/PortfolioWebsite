@@ -34,7 +34,6 @@ const ColumnLeft = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  //align-items: flex-start;
   line-height: 1.4;
   padding: 1rem 3rem;
   order: ${({ reverse }) => (reverse ? '2' : '1')};
@@ -70,7 +69,6 @@ const ColumnLeft = styled.div`
   }
 `;
 const ColumnRight = styled.div`
-  //padding: 1rem 2rem;
   background: #2e2927;
   order: ${({ reverse }) => (reverse ? '1' : '2')};
   display: flex;

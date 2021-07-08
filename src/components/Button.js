@@ -5,7 +5,7 @@ export const Button = styled(Link)`
   background: ${({ primary }) => (primary ? '#000d1a' : 'CD853F')};
   white-space: nowrap;
   outline: none;
-  bordor: none;
+  border: none;
   min-width: 100px;
   max-width: 200px;
   cursor: pointer;
