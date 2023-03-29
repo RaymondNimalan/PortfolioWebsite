@@ -5,7 +5,7 @@ export const projectData = [
   {
     title: 'CloneGPT',
     about1: 'A JavaScript and Node.js clone of the famous A.I chatbot ChatGPT',
-    about2: 'Tech Stack: JavaScript, React, Express, Node.js, OpenseaAI',
+    about2: 'Tech Stack: JavaScript, React, Express, Node.js, OpenAI API',
     image: CloneGPTMockup,
     websiteUrl: 'TBD',
     githubUrl: 'https://github.com/RaymondNimalan/clonegpt',
