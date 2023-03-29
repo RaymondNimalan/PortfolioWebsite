@@ -2,6 +2,14 @@ import InfuaxWarsMockup from '../images/InfauxMockup.jpeg';
 import PoshPupsMockup from '../images/PoshPupsMockup.jpeg';
 export const projectData = [
   {
+    title: 'CloneGPT',
+    about1: 'A JavaScript and Node.js clone of the famous A.I chatbot ChatGPT',
+    about2: 'Tech Stack: JavaScript, React, Express, Node.js, OpenseaAI',
+    image: InfuaxWarsMockup,
+    websiteUrl: 'TBD',
+    githubUrl: 'https://github.com/RaymondNimalan/clonegpt',
+  },
+  {
     title: 'MaskOn',
     about1:
       'Responsive web application using label detection through machine learning to verify if a person is wearing a mask to prevent the spread of COVID-19.',
