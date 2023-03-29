@@ -1,11 +1,12 @@
 import InfuaxWarsMockup from '../images/InfauxMockup.jpeg';
 import PoshPupsMockup from '../images/PoshPupsMockup.jpeg';
+import CloneGPTMockup from '../images/CloneGPTMockup.png';
 export const projectData = [
   {
     title: 'CloneGPT',
     about1: 'A JavaScript and Node.js clone of the famous A.I chatbot ChatGPT',
     about2: 'Tech Stack: JavaScript, React, Express, Node.js, OpenseaAI',
-    image: InfuaxWarsMockup,
+    image: CloneGPTMockup,
     websiteUrl: 'TBD',
     githubUrl: 'https://github.com/RaymondNimalan/clonegpt',
   },
