@@ -3,9 +3,9 @@ import FacePic from '../images/FacePic.jpeg';
 export const AboutData = {
   heading: 'About',
   paragraphOne:
-    'Hi! My name is Raymond Nimalan. I am a Fullstack Engineer from the Washington D.C. area. From a young age, I have always been fascinated with computers and all things tech. But a huge turning point was when I started building computers for myself and my close friends. This hobby fueled the desire and passion to learn as much as I could about computers. The natural progression was to then learn to code in my free time off work.',
+    'Hi! My name is Raymond Nimalan. I am a Fullstack Engineer living in Brooklyn, NY. From a young age, I have always been fascinated with computers and all things tech. But a huge turning point was when I started building computers for myself and my close friends. This hobby fueled the desire and passion to learn as much as I could about computers. The natural progression was to then learn to code in my free time off work.',
   paragraphTwo:
-    ' After much research and deliberation, I applied to Fullstack Academy, a 17 week program focused on Javascript and the PERN stack. My hard work paid off and I was accepted into the fall 2020 cohort and later graduated in early 2021. I am extremely excited to see where my new career path takes me and I look forward to working with new diverse groups of people and organizations.',
+    "I have a proven track record of creating and implementing successful front and back-end applications. I've cultivated a deep passion for developing efficient solutions and products, and I'm always looking to improve my abilities, one line of code at a time. I strive to use my unique background and skill set to create a better, more accessible world we can be proud to live in. I aim to contribute my software engineering skills to a team that prioritizes collaboration and aspires to build a thriving and safer world together.",
   buttonLabel: 'label',
   image: FacePic,
   reverse: false,
