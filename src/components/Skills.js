@@ -14,14 +14,14 @@ position: relative;
 
 `;
 
-const Background = styled.div`
-position: absolute;
-width: 100%;
-z-index: 2;
+// const Background = styled.div`
+// position: absolute;
+// width: 100%;
+// z-index: 2;
 
-width: 100%;
-height: 100%;
-`;
+// width: 100%;
+// height: 100%;
+// `;
 
 const VideoBg = styled.video`
   position: absolute;
