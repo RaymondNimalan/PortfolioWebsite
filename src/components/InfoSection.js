@@ -4,21 +4,29 @@ import styled from 'styled-components';
 const Section = styled.div`
   width: 100%;
   height: 100%;
-  padding: 1rem 0rem;
-  background: black;
-  padding-top: 32px;
+  padding: 32px;
+  display: relative;
+  flex-direction: column;
+  max-width: 1000px;
+  justify-items: center;
+  justify-self: center;
   h1 {
-    position: flex;
+    width: 100%;
+    margin-bottom: 32px;
+    align-self: start;
     color: whitesmoke;
     font-size: clamp(1.5rem, 6vw, 2rem);
-    padding: 16px 0px 0px 32px;
+    padding: 0px 16px;
   }
 `;
 const Container = styled.div`
   display: grid;
+
+
   grid-template-columns: 1fr 1fr;
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
+    width: 75%;
   }
 `;
 const ColumnLeft = styled.div`
@@ -27,23 +35,19 @@ const ColumnLeft = styled.div`
   justify-content: center;
   align-items: flex-start;
   line-height: 1.4;
-  padding: 2rem 2rem;
   order: ${({ reverse }) => (reverse ? '2' : '1')};
   p {
     color: whitesmoke;
 
     margin-top: 2rem;
     @media screen and (max-width: 768px) {
-      text-align: center;
     }
   }
   @media screen and (max-width: 768px) {
     order: 2;
-    padding: 0px 32px 32px 32px;
   }
 `;
 const ColumnRight = styled.div`
-  padding: 1rem 2rem;
   order: ${({ reverse }) => (reverse ? '1' : '2')};
   display: flex;
   justify-content: center;
@@ -60,8 +64,6 @@ const ColumnRight = styled.div`
     object-fit: contain;
 
     @media screen and (max-width: 768px) {
-      width: 90%;
-      height: 90%;
     }
   }
 `;

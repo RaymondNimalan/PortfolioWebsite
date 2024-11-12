@@ -6,31 +6,52 @@ import { FaLinkedin } from 'react-icons/fa';
 import { ImMail } from 'react-icons/im';
 
 const MainContainer = styled.div`
-  display: block;
+position: relative;
   color: whitesmoke;
+height: auto;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  overflow: hidden;
 `;
 
-const Background = styled.div``;
+const Background = styled.div`
+position: absolute;
+height: 350px;
+width: 100%;
+`;
 
 const VideoBg = styled.video`
   position: absolute;
   object-fit: cover;
-  z-index: -1;
   width: 100%;
   height: 350px;
+  z-index: -1;
   @media screen and (max-width: 480px) {
-    height: 250px;
+    height: 350px;
   }
 `;
 
 const Content = styled.div`
-  position: relative;
+  position: flex;
+  justify-self: center;
+  width: 100%;
+  max-width: 500px;
   padding: 32px;
+
   h1 {
     font-size: clamp(1.5rem, 6vw, 2rem);
 
     padding: 32px;
     text-align: center;
+    padding: 20px;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+  backdrop-filter: blur(10px); /* Blurs the background behind */
+  border-radius: 10px; /* Optional: Rounded corners */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7),
+               0px 0px 10px rgba(0, 0, 0, 0.5);
     @media screen and (max-width: 480px) {
       padding: 16px;
     }

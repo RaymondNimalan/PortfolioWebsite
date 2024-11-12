@@ -18,7 +18,6 @@ function App() {
     <>
       <Navbar toggle={toggle} />
       <Landing />
-
       <Dropdown isOpen={isOpen} toggle={toggle} />
       <InfoSection {...AboutData} />
       <Skills />

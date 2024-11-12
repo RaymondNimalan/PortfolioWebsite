@@ -5,37 +5,42 @@ import { FaGithubAlt } from 'react-icons/fa';
 import { TiHomeOutline } from 'react-icons/ti';
 
 const Section = styled.div`
-  position: relative;
   width: 100%;
   height: 100%;
-  padding: 1rem 0rem;
   padding-top: 32px;
   background: black;
+  max-width: 1000px;
+  justify-self: center;
+  justify-content: center;
   h1 {
     font-size: clamp(1.5rem, 6vw, 2rem);
     color: whitesmoke;
-    position: relative;
     padding: 0px 0px 0px 32px;
+  }
+  @media screen and (max-width: 768px) {
   }
 `;
 const Container = styled.div`
   width: 100%;
-  background: black;
-  padding: 1rem 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  height: auto;
+  display: flex;
+  justify-self: center;
+  background: #2e2927;
+  border-radius: 8px;
+  margin: 16px;
   grid-template-rows: 300px;
   @media screen and (max-width: 768px) {
-    grid-template-columns: 1fr;
+flex-direction: column;
   }
 `;
 const ColumnLeft = styled.div`
-  background: #2e2927;
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
   line-height: 1.4;
   padding: 1rem 3rem;
+  border-radius: 8px;
   order: ${({ reverse }) => (reverse ? '2' : '1')};
 
   h2 {
@@ -69,11 +74,14 @@ const ColumnLeft = styled.div`
   }
 `;
 const ColumnRight = styled.div`
-  background: #2e2927;
   order: ${({ reverse }) => (reverse ? '1' : '2')};
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
+  max-width: 400px;
+margin: auto;
 
   align-items: center;
 
@@ -81,15 +89,14 @@ const ColumnRight = styled.div`
     width: 100%;
     height: 100%;
     object-fit: contain;
-
+    border-radius: 4px;
+/* 
     @media screen and (max-width: 768px) {
       width: 75%;
-      height: 300px;
     }
     @media screen and (max-width: 480px) {
       width: 75%;
-      height: 200px;
-    }
+    } */
   }
 `;
 
